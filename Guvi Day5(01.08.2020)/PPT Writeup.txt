@@ -83,17 +83,6 @@ appropriate result
 absolutely necessary
 
 
-
-Fatal Errors
-• The application absolutely cannot
-continue
-• Significantly interferes with user's ability
-to be productive
-• Other errors will occur ifthe application
-continues
-• Message the user immediately!
-• Reload
-
 Final Rules
 1.Assume your code will fail
 2.Log errors to the server
