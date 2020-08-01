@@ -20,7 +20,7 @@ window.onerror
 • Return true to indicate notto respond
 • Only supported in Internet Explorer and Firefox
 
-Error Lifecycle:
+Error Lifecycle in Sequesnce of Occurenece:
 Error
 try-catch
 window.onerror
