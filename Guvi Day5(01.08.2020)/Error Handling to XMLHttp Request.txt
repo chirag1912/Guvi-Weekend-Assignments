@@ -1,0 +1,15 @@
+Q. Add error handling to the xmlhttprequest code
+
+xhttp=new XMLHttpRequest();
+xhttp.open("GET",doc_name,true);
+xhttp.send();
+
+if (xhttp.status === 200 || xhttp.status === 304) {
+    xmlDoc=xhttp.responseXML;
+    if(xmlDoc==null)
+    {
+       xmlDoc=loadXMLDoc(defaultXml);
+    }
+}
+
+//200 (OK) or 304 (Not Modified) would be considered a successful request.
