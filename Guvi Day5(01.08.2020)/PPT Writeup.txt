@@ -1,0 +1,107 @@
+What do users see when there's a JavaS cript error on
+a web page?
+
+Nothing as:
+If an error is possible, someone will make it. The designer must assume that all possible errors will occur and design so as to minimize the chance of the error in the first place, or its
+effects once it gets made. Errors should be easy to detect,they should have minimal consequences, and, if possible,their effects
+should be reversible.
+
+2. Log errors to the server
+log(1,"Error Happened");
+
+3. You, not the browser, handle errors
+try-catch
+• Thrown errors contain extra information
+• Errors that are caught are considered to
+have been handled
+
+window.onerror
+• Last stop before browser responds
+• Return true to indicate notto respond
+• Only supported in Internet Explorer and Firefox
+
+Error Lifecycle:
+Error
+try-catch
+window.onerror
+Browser Error
+
+4. Identify where errors might occur:
+Types of Errors
+• Type coercion errors
+• Data type errors
+
+Data Type Errors
+• Often occurs with function arguments
+• Typically a symptom ofinsufficient value
+checking
+
+Communication Errors
+• Invalid URL/post data
+• Server response status
+• No network connection
+• Server response content.
+
+5. Invalid URL/Pos t Data
+• Typically long string concatenations
+• Don'tforgetto use
+encodeURIComponent() on each part
+– Not encodeURI()
+• Make sure parameters are named
+correctly
+
+6. Server Response S tatus
+• 200 is notthe only valid status that may
+be returned
+– Beware of 304
+• Any other status means you didn't get
+data
+
+No Network Connection
+• Internet Explorer throws an error when calling open() butthen goes through normal lifecycle
+• Firefox fails silently butthrows an error if you try to access any response property
+(status, statusText,responseText)
+
+7. Rule:5 Throw your own errors
+Throw or Try-Catch?
+• Errors should be thrown in the low-level
+parts ofthe application
+– Utilities, core libraries, etc.
+• Use try-catch blocks in higher level parts
+– Application-specific
+– Client-side business logic
+
+8. Rule 6: Fatal VS Non Fatal Distinguish:
+Non-Fatal Errors							
+• Won'tinterfere with user's main tasks
+• Affects only a portion ofthe page
+– Easily disabled/ignored
+• Recovery is possible
+• A repeat ofthe action may resultin the
+appropriate result
+• Don'ttell the user itisn't working unless
+absolutely necessary
+
+
+
+Fatal Errors
+• The application absolutely cannot
+continue
+• Significantly interferes with user's ability
+to be productive
+• Other errors will occur ifthe application
+continues
+• Message the user immediately!
+• Reload
+
+Final Rules
+1.Assume your code will fail
+2.Log errors to the server
+3.You, notthe browser, handle errors
+4.Identify where errors might occur
+5.Throw your own errors
+6.Distinguish fatal versus non-fatal
+7.Provide a debug mode
+
+
+
