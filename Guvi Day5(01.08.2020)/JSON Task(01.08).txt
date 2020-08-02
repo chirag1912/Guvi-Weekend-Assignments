@@ -18,16 +18,16 @@ let cat = {
 
 // console.log(cat);
 
-// 1. Add height and weight to Fluffy
+Add height and weight to Fluffy Cat:
 
 cat.height = 30;
 cat.weight = 5;
 
-// 2. Fluffy name is spelled wrongly. Update it to Fluffyy
+Fluffy name is spelled wrongly. Update it to Fluffyy:
 
 cat.name = "Fluffyy";
 
-// 3. List all the activities of Fluffyy’s catFriends.
+List all the activities of Fluffyy’s catFriends:
 
 let output = [];
 for (let friend in cat.catFriends) {
@@ -35,7 +35,7 @@ for (let friend in cat.catFriends) {
 }
 console.log("Activities of catFriends : " + output);
 
-// 4. Print the catFriends names.
+4. nt the catFriends names.
 
 output = [];
 for (let friend in cat.catFriends) {
@@ -43,7 +43,7 @@ for (let friend in cat.catFriends) {
 }
 console.log("CatFriends names : " + output);
 
-// 5. Print the total weight of catFriends
+5. Print the total weight of catFriends:
 
 let weight = cat.weight;
 for (let friend in cat.catFriends) {
@@ -51,7 +51,7 @@ for (let friend in cat.catFriends) {
 }
 console.log("Weight : " + weight);
 
-// 6. Print the total activities of all cats (op:6)
+6. Print the total activities of all cats (op:6)
 
 output = [...cat.activities];
 for (let friend in cat.catFriends) {
@@ -59,13 +59,13 @@ for (let friend in cat.catFriends) {
 }
 console.log("Activities of all cats : " + output);
 
-// 7. Add 2 more activities to bar & foo cats
+7. Add 2 more activities to bar & foo cats
 
 for (let friend in cat.catFriends) {
     cat.catFriends[friend].activities.push("scraching", "chasing rats");
 }
 
-// 8. Update the fur color of bar
+8. Update the fur color of bar
 
 cat.catFriends[0].furcolor = "brown";
 
