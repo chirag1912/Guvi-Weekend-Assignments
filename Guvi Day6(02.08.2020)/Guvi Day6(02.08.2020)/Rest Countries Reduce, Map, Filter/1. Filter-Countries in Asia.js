@@ -35,11 +35,11 @@ console.log(bumppop);
 
 let arr1=JSON.parse(this.response);
 arr1.forEach(a=> a.population += 100000);		//Using forEach doesnt modify the actual array; 
-console.log(dummy);
+console.log(arr1);
 
 //Convert all the names in capital
 arr1.forEach(a=> a.name = a.name.toUpperCase());
-console.log(dummy);
+console.log(arr1);
 
 //Print follwoig details  name , capital , flag 
 let details =dummy.map(a=>  [a.name,a.capital,a.flag]);
