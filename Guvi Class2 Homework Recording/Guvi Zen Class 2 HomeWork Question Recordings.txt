@@ -1,0 +1,141 @@
+Can you explain about DOM and the browser components?
+
+DOM is Document Object Model used for HTML Documents.
+DOMtreats each HTML document as a tree structure, with each node representing an object as a part of Document.
+
+The different Browser Components:
+Primary components of a browser are: User Interface, Browser Engine and Rendering Engine.
+
+User Interface – Anything that is rendered on the screen by the  window that displays the requested page.
+which include Pictures and information of requested data.
+
+Browser engine – It commands action between rendering engine and the user interface.
+
+Rendering engine – The main function of rendering engine is to display the content that is requested. For example, if an HTML content is requested, the engine parses CSS and HTML and when the content is parsed, it is displayed on the screen.
+
+
+
+
+Why we need an IP address and mac address?
+
+IP address is virtual address whereas MAC address is Physical address, 
+IP address can be used to track the device being used.
+IP address is designed in a manner to trace the device equipment.
+Whereas, MAC address being difficult to locate, but can be used to trace a particular device by mapping both the MAC and IP address of the device.
+
+Are JS and Java are the same?
+
+No JS and Java are not same. Even though both have the names of Java in them.
+Reason being: 
+JS is used as a browser's language.
+Java is not.
+JS is multi paradigm java is Object Oriented.
+No global objects can be defined in Java , JS yes.
+
+What are the various Layout and JS engines?
+
+For each browser there are diff JS engines for eg.
+Chrome and OPera has V8 JS engine.
+Firefox has Spider Monkey.
+IE and Edge Have CHakra as their JS Engine;
+
+Layout or Rendering Engine for diff browsers are:
+Chrome and OPera has Blink Rendering/Layout Engine.
+Firefox has Gecko.
+IE- Gecko and Edge-Trident;
+
+
+
+
+What's a programming paradigm?
+
+Style of writing the code. 
+The user has to compulasary follow the rules of language but 
+if the language is multi paridgm like JavaScript user has an option to choose the language.
+
+Whereas the programmer doesnot have this flexibility with Java or with C++ both being strictly Object Oriented Languages.
+
+
+JS can choose the Paradigm is multiparadigm Language.
+
+
+Features of JS?
+JS is multiparadigm.
+Is curently in Platform independent as can be used in browser.
+
+Simple Client-side Calculations
+Since JavaScript is a client-side technology, it can perform basic calculations on the browser. The browser does not need to ask server time for every task. This is especially helpful when a user needs to perform these calculations repeatedly. In these cases, connecting to the server would take a lot more time than performing the actual calculations.
+
+Platform Independent
+Since browsers interpret JavaScript, it solves the problem of compilation and compatibility. Thus it can run on Windows, Macintosh, and other Netscape-supported systems. Also, it is possible to embed them in any other script like HTML that keeps JavaScript into use.
+
+1. Let/Const
+JavaScript has introduced the keywords ‘let’ and ‘const’ that are available to replace ‘var’. Unlike ‘var’, they are important due to their blocked scope i.e we can only access them in the block we defined them in. Whereas ‘var’, even if we initialize it inside a function, we can access it outside of the function.
+
+Generating HTML Content
+JavaScript has very handy features to dynamically generate HTML content for the web. It allows us to add text, links, images, tables, etc after an event occurrence (eg – mouse click).
+Will stay in current trend, as most of the companies are pushing for frameworks of JS including Google with Node.js, Angular and FB with React framework.
+
+What happens when you hit a website? Explain the flow in detail.
+
+On typing name of The website:
+The request is looked up in the Local Domain Name Server which includes, Cache of Browser, OS, Router and From the ISP provider, if not found then searches the global DNS Server.
+
+Initiates the suitable connection: HTTP in case of website call;
+which is inturn a TCP connection.
+
+To call the website Get method of HTTP is used;
+
+The server sends the suitable pages(HTML+CSS+JS), 
+which include HTML.index, CSS SOM document, and Javascript Page.
+each time a new call has to be placed in the case of HTTP v1.1.
+
+A new TCP/IP connection is requested by the client and recieved from the Server.
+
+
+Browser renders the HTML-DOM and CSS-SOM pages using the respective Rendering/Layout ENgine along with the JS Engine.
+
+and thus renders the website with the Data and GUI to the user.
+
+
+What are the HTTP error codes?
+100 waiting;    Req headers sent by client Server waiting for the contents of body from the client;
+2xx loaded successfully;
+3xx Sends to diff website;
+4xx error in loading page no such page exists in DNS;
+5xx Server Error;
+
+What is the diff between http1.1 vs http2?
+
+HTTP2 priarily designed to increase theperformance.
+
+
+
+HTTP 2 did few round trips as much possible:
+
+
+Asks for all 3 files at a time, so no of rounds of TCP connection are now much less;
+
+HTTP v2 is designed to get or load the contents of website faster than HTTP 1.1;
+
+Client tries to ask all the required info from the server in one go to reduce the rounds of going back and forth;
+
+Server Push Concept: In this case, client did not ask for get request of other documents, but server did know;
+So, server sends with HTML.index, CSS and JavaScript pages as well i single route.
+
+What's an HTTP header?
+Every HTTP request has a header and an optional body part.
+First part of Header cotains: HTTP Request Line==Contains: HTTP Verb, URI (Uniform Resource Identifier), HTTP Version Number.
+
+Eg of REquest Line: GET /home.html HTTP/1.1 
+	            verb   Res to access Version of HTTP Request.
+
+We also have optional request headers.
+
+ This is the property we can use for a request.
+Is written in Name:Value pairs;
+
+
+What's the default browser method?
+While requesting for a document Browser's default method is Get;
+And PUsh while wanting to change the data on Servers.
