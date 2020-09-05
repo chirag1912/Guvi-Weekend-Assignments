@@ -102,3 +102,40 @@ console.log(str);
 let var1=document.createElement('div');
 var1.innerHTML=str;
 document.body.appendChild(var1);
+
+//Considering the Constraints:
+//Without Using Named Function:
+var abc=setTimeout(function(){
+    console.log(10);
+    setTimeout(function(){
+        console.log(9);
+        setTimeout(function(){
+            console.log(8);
+            setTimeout(function(){
+                console.log(7);
+                setTimeout(function(){
+                    console.log(6);
+                    setTimeout(function(){
+                        console.log(5);
+                        setTimeout(function(){
+                            console.log(4);
+                            setTimeout(function(){
+                                console.log(3);
+                                setTimeout(function(){
+                                    console.log(2);
+                                    setTimeout(function(){
+                                        console.log(1);
+                                        setTimeout(function(){
+                                            console.log("Happy New Year!!");
+                                            
+                                        },1000)
+                                    },1000)
+                                },1000)
+                            },1000)
+                        },1000)
+                    },1000)
+                },1000)
+            },1000)
+        },1000)
+    },1000)
+},2000)
