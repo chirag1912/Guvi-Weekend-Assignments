@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    font-family:Roboto;
+    padding:0;
+    margin:0;
+    background-color:#f4f4f4;
+}
+
+.container{
+    width:60%;
+    margin:auto;
+    overflow:hidden;
+}
+
+.branding{
+    border-bottom: 3px solid grey;
+}
+
+.branding div h2{
+    font-size: 42px;
+    display: inline;
+    float:left;
+    color:grey;
+}
+
+.branding nav{
+    padding: 10px;
+    display: inline;
+    float: right;
+}
+
+header{
+    padding-top:50px;
+}
+
+header .container ul li{
+    /* background:blue; */
+    text-decoration: none;          /*Just removes the underline from anchir tags link*/ 
+    text-transform: capitalize;
+    padding:5px;
+    float:left;   /* float left will only set the href tag in one line and setting nav bar to right and it has to be list items float:left*/
+    display:inline;
+    padding-top:20px;
+    color:rgb(77, 77, 255);
+    padding:5px;
+    font-size: 20px;
+    margin-top: 1.5em;
+    font-weight: bold;
+}
+
+.selected{  
+    color:rgb(255, 255, 255);   
+    background:rgb(123, 123, 219);
+    border: 1px blue;
+    font-weight:bold;
+    border-radius: 4px;
+}
+
+.showcase{
+    text-align:center;
+    margin:auto;
+    font-size:46px;
+    background:rgb(230, 230, 230);
+    padding:20px;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+
+
+.button1{
+    display:block;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    border-radius: 8px;
+    background: rgb(51, 214, 51);
+    /* font-weight: bold; */
+    font-size: 28px;
+    margin:auto;
+    border:0;
+    margin-bottom: 20px;
+}
+
+.button2{
+    display:block;
+    padding: 15px 25px 15px 25px;
+    color:white;
+    border-radius: 8px;
+    background: rgb(72, 72, 221);
+    /* font-weight: bold; */
+    font-size:28px;
+    margin:auto;
+    margin-bottom: 20px;
+    border:0;
+}
+
+.subheading-class{
+    /* float:right; */
+    /* text-align:center; */
+}
+.subheading{
+    float: left;
+    color: grey;
+    display:inline;
+    width: 45%;
+    text-align:center;
+    padding:10px;
+    word-wrap: normal;
+    
+}
+
+.subheading p{
+    font:bold;
+    font-size: 24px;
+}
+.subheading h2{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.clear-float{
+    clear:both; 
+}
+
+footer{
+    border-top: 3px solid grey;
+    margin-left:40%;
+    padding: 30px; 
+    font-size: 28px;
+}
+
+.footer-style{
+    color: blue;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
