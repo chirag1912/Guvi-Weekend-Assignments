@@ -1,3 +1,6 @@
+
+type PetKind= 'Dog'|'Parrot'|'Cat';
+
 interface history{
     familyOfPet: string;
     colorOfPet: string;
@@ -5,11 +8,6 @@ interface history{
     tagNumber: number;
 }
 
-// interface Counter{
-//     DogCounter:number;
-//     CatCounter:number;
-//     ParrotCounter:number;
-// }
 
 interface petHabits{
     familyOfPet: string;
@@ -20,7 +18,7 @@ interface petHabits{
 
 class PetsAvailability{                     //Availability Class
     //Pets available for adoption with characteristic nad his history;
-    kindofPet: string;
+    kindofPet: PetKind;
     character: string;
     historyOfPet: history;
     availabilityCounter: number;
@@ -34,21 +32,18 @@ class PetsAvailability{                     //Availability Class
         this.ParrotCounter=0;
     }
     
-    insertPet(_kindofPet:string,_character:string, _historyOfPet:history){
+    insertPet(_kindofPet:PetKind,_character:string, _historyOfPet:history){
         this.kindofPet=_kindofPet;
         this.character=_character;
         this.historyOfPet=_historyOfPet;
 
         if(_kindofPet=="Dog"){                                 
-            // this.PetsCount.DogCounter+=1;
             this.DogCounter+=1;
         }   
         if(_kindofPet=="Cat"){
-            // this.PetsCount.CatCounter+=1;
             this.CatCounter+=1; 
         } 
         if(_kindofPet=="Parrot"){
-            // this.PetsCount.ParrotCounter+=1;
             this.ParrotCounter+=1;
         } 
 
