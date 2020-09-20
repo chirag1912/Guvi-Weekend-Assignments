@@ -9,15 +9,12 @@ var PetsAvailability = /** @class */ (function () {
         this.character = _character;
         this.historyOfPet = _historyOfPet;
         if (_kindofPet == "Dog") {
-            // this.PetsCount.DogCounter+=1;
-            this.DogCounter += 2;
+            this.DogCounter += 1;
         }
         if (_kindofPet == "Cat") {
-            // this.PetsCount.CatCounter+=1;
             this.CatCounter += 1;
         }
         if (_kindofPet == "Parrot") {
-            // this.PetsCount.ParrotCounter+=1;
             this.ParrotCounter += 1;
         }
     };
