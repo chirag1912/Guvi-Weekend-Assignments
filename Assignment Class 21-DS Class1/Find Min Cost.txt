@@ -1,0 +1,58 @@
+/**
+ * @param {string} s
+ * @param {number[]} cost
+ * @return {number}
+ */
+var minCost = function(s, cost) {
+    
+//Take out max and subtrac from the total;
+    
+for(i in cost.length){
+    Str[i]=cost[i];  
+}
+
+let totalSum=0;
+let sumFinal=0;
+let count=0;
+let max=0;
+    let j=0;
+    for(let i=0;i<s.length;i++){
+        j=i+2;
+        if(s[i]!=s[i+1]){
+            totalSum=0;     //Making TotalSum=0 as soon as the string is!=;
+            max=0;
+            continue;
+        }
+        
+           
+        if(s[i]==s[i+1]){
+                
+                totalSum+=cost[i];
+                if(cost[i]>max){
+                    max=cost[i];
+                }
+            }
+        
+        if(s[i]!=s[j]  && s[i]==s[i+1]){
+            totalSum+=cost[i+1];
+            //console.log(totalSum);
+            if(cost[i+1]>max){
+                    max=cost[i+1];
+                }
+            //console.log(max);
+            sumFinal+=totalSum-max;
+        } 
+    
+            
+        
+        }                               //End of one loop created;
+    
+    
+    return sumFinal;
+    
+};
+
+//minCost("aaabbbabbbb",[3,5,10,7,5,3,5,5,4,8,1]);
+
+
+
