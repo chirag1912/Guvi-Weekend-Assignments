@@ -1,0 +1,34 @@
+1.Find all the information about each products
+2.Find the product price which are between 400 to 800
+3.Find the product price which are not between 400 to 600
+4 List the four product which are grater than 500 in price 
+5 Find the product name and product material of each products
+6 Find the product with a row id of 10
+7Find only the product name and product material
+8Find all products which contain the value of soft in product material 
+9Find products which contain product color and product price are same
+10Delete the products which product price value are same
+
+1.db.products.find().pretty();
+2.db.products.find(
+	{"product_price":{$gt:"400",$lt:800}},
+);
+
+3.  db.products.find( {"product_price":{$not:{$gt:"400",$lt:"800"}}});
+
+{$not:{$gt:"400",$lt:"800"}}			//{$not:{...}} precedes
+
+
+4. db.products.find(
+{product_price:{$gt:500}}
+).limit(4);
+
+5.  db.products.find({},{"product_name":1,"product_material":1,"_id":0});
+
+6. db.products.find({"id":"10"},{"_id":0});
+
+7. db.products.find({},{"product_name":1,"product_material":1,"_id":0});
+
+8. db.products.find({"product_material":"Soft"},{"_id":0});
+
+9. 
