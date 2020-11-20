@@ -1,0 +1,12 @@
+2012-04-23T18:25:43.511Z
+
+
+console.log(d1.getTime() === d2.getTime()); // prints true (correct)
+
+The good news – and maybe not very widely known news at that – is that ISO dates can be easily converted into JavaScript dates by use of the flexible JavaScript Date constructor. The date constructor accepts a wide variety of inputs to construct a date, ISO 8601 amongst them.
+
+The following turns the ISO date back into a ‘real’ date:
+var json = "\"2014-01-01T23:28:56.782Z\"";
+
+var date = new Date(dateStr);
+console.log(date);  // Wed Jan 01 2014 13:28:56 GMT-1000 (Hawaiian Standard Time)
